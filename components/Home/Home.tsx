@@ -1,4 +1,10 @@
-import React from 'react'
+"use client";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
+import React, { useEffect } from 'react'
 import Hero from './Hero/Hero'
 import About from './About/About'
 import Couses from './Course/Couses'
@@ -7,7 +13,22 @@ import Review from './Review/Review'
 import Article from './Article/Article'
 
 
+
 const Home = () => {
+
+  useEffect(()=> {
+    const initAos= async ()=>{
+      await import('aos');
+       AOS.init({ 
+        duration:1000,
+        easing:"ease",
+        once:true,
+        anchorPlacement:"top-bottom"
+       })
+    }
+
+    initAos();
+  },[])
   return (
     <div>
       <Hero/>
@@ -16,6 +37,7 @@ const Home = () => {
       <Feature/>
       <Review/>
       <Article/>
+      
     </div>
   )
 }

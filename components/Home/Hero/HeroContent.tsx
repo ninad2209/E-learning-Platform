@@ -5,12 +5,12 @@ const HeroContent = () => {
   return (
     <div>
         {/*Heading */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold md:leading-[3rem] lg:leading-[3.5rem] xl:leading-[4rem] text-white"> E-learning Platform by Ninad.</h1>
+        <h1 data-aos="fade-right" className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold md:leading-[3rem] lg:leading-[3.5rem] xl:leading-[4rem] text-white"> E-learning Platform by Ninad.</h1>
         {/*Description */}
-        <p className="mt-6 text-sm md:text-base text-white text-opacity-60">Welcome to E-Learning Platform, your all-in-one e-learning platform designed to help you grow your skills and achieve your goals. Whether you’re a student, professional, or lifelong learner, we provide high-quality courses that fit your schedule.</p>
+        <p data-aos="fade-left" data-aos-delay="200" className="mt-6 text-sm md:text-base text-white text-opacity-60">Welcome to E-Learning Platform, your all-in-one e-learning platform designed to help you grow your skills and achieve your goals. Whether you’re a student, professional, or lifelong learner, we provide high-quality courses that fit your schedule.</p>
         {/*Buttons */}
         <div className="mt-8 flex items-center space-x-4">
-            <button className="button__cls bg-green-700 hover:bg-green-900">Get Started</button>
+            <button data-aos="zoom-in" data-aos-delay="400" className="button__cls bg-green-700 hover:bg-green-900">Get Started</button>
             <button className="button__cls bg-yellow-700 hover:bg-yellow-900">Learn More</button> 
         </div>
         {/*Stats */}
