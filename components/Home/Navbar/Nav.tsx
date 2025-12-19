@@ -6,7 +6,12 @@ import { navLinks } from '@/constant/constant';
 import Link from 'next/link';
 import { HiBars3BottomRight } from 'react-icons/hi2';
 
-const Nav = () => {
+//define props type 
+type Props={
+  openNav:()=> void;
+}
+
+const Nav = ({openNav}:Props) => {
 
   const [navBg,setNavBg]=useState(false)
 
@@ -27,9 +32,9 @@ const Nav = () => {
 
 
   return (
-    <div className={`fixed w-full transition-all duration-200 h-[12vh] z-[1000] ${navBg ? 'bg-indigo-800' : 'bg-blue-700'}`}>
+    <div className={`fixed ${navBg ? "bg-indigo-800" :""} w-full transition-all duration-200 h-[12vh] z-[1000]`}>
       <div className='flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto'>
-        <Image src="/images/logo.png" alt="Logo" width={120} height={100}/> {/* Logo*/}
+        <Image src="/images/logo.png" alt="Logo" width={100} height={70}/> {/* Logo*/}
         {/*Nav links */}
         <div className='hidden lg:flex item-center space-x-10'>
           {navLinks.map((link)=>{
@@ -45,7 +50,7 @@ const Nav = () => {
         <button className='md:px-10 md:py-2 px-8 py-1.5 text-white font-semibold text-base bg-pink-700 hover:bg-pink-800 transition-all duration-200 rounded-lg'>Signup Now</button>
       </div>
       {/*Burger Menu */}
-      <HiBars3BottomRight className='w-8 h-8 cursor-pointer text-white lg:hidden'/>
+      <HiBars3BottomRight onClick={openNav} className='w-8 h-8 cursor-pointer text-white lg:hidden'/>
       </div>  
     </div>
   )

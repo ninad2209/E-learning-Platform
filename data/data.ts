@@ -2,9 +2,9 @@ export const coursesData = [
   {
     id: 1,
     image: "/images/c1.jpg",
-    title: "Introduction to JavaScript",
-    price: 49.99,
-    author: "Code with Harry",
+    title: "Introduction to CyberSecurity",
+    price: 79.99,
+    author: "Cispa",
     reviewNumber: 450,
     lessons: 20,
     students: 150,
@@ -82,7 +82,7 @@ export const articleData = [
     username: "Jane Smith",
     reaction: 78,
     coverImage: "/images/b2.jpg",
-    title: "A Guide to Node.js Event Loop",
+    title: "A Guide to Node.js",
   },
   {
     id: 3,
@@ -90,6 +90,6 @@ export const articleData = [
     username: "Alex Johnson",
     reaction: 62,
     coverImage: "/images/b3.jpg",
-    title: "Introduction to React Hooks",
+    title: "Introduction to React",
   },
 ];
