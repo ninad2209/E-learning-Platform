@@ -31,12 +31,24 @@ const Home = () => {
   },[])
   return (
     <div>
-      <Hero/>
-      <About/>
-      <Couses/>
-      <Feature/>
-      <Review/>
-      <Article/>
+      <section id="home">
+        <Hero/>
+      </section>
+      <section id="about">
+        <About/>
+      </section>
+      <section id="couses">
+        <Couses/>
+      </section>
+      <section id="feature">
+        <Feature/>
+      </section>
+      <section id="review">
+        <Review/>
+      </section>
+      <section id="article">
+        <Article/>
+      </section>
       
     </div>
   )

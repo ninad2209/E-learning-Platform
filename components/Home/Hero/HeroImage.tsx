@@ -6,7 +6,7 @@ import Tilt from 'react-parallax-tilt';
 const HeroImage = () => {
   return (
   <Tilt>
-    <div className="hidden lg:block rounded-full">
+    <div data-aos="fade-left" data-aos-delay="1050" className="hidden lg:block rounded-full">
         <Image src="/images/hero.png" width={800} height={600} alt="Hero"/>
     </div>
   </Tilt>

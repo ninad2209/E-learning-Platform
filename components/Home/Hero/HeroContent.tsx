@@ -11,22 +11,22 @@ const HeroContent = () => {
         {/*Buttons */}
         <div className="mt-8 flex items-center space-x-4">
             <button data-aos="zoom-in" data-aos-delay="400" className="button__cls bg-green-700 hover:bg-green-900">Get Started</button>
-            <button className="button__cls bg-yellow-700 hover:bg-yellow-900">Learn More</button> 
+            <button data-aos="zoom-in" data-aos-delay="500" className="button__cls bg-yellow-700 hover:bg-yellow-900">Learn More</button> 
         </div>
         {/*Stats */}
         <div className="flex items-center flex-wrap space-x-16 mt-8">
-            <div>
+            <div data-aos="fade-up" data-aos-delay="600">
                 <p className="md:text-xl lg:text-2xl text-base text-white font-bold">100+</p>
                 <p className="w-[100px] h-[3px] bg-green-600 mt-2 mb-2 rounded-lg"></p>  {/*Its the line below  stats number*/}
                 <p className="md:text-lg text-sm text-white text-opacity-70">Teachers</p>
             </div>
         
-            <div>
+            <div data-aos="fade-up" data-aos-delay="680">
                 <p className="md:text-xl lg:text-2xl text-base text-white font-bold">600+</p>
                 <p className="w-[100px] h-[3px] bg-blue-600 mt-2 mb-2 rounded-lg"></p>  {/*Its the line below  stats number*/}
                 <p className="md:text-lg text-sm text-white text-opacity-70">Students</p>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-delay="880">
                 <p className="md:text-xl lg:text-2xl text-base text-white font-bold">40+</p>
                 <p className="w-[100px] h-[3px] bg-pink-600 mt-2 mb-2 rounded-lg"></p>  {/*Its the line below  stats number*/}
                 <p className="md:text-lg text-sm text-white text-opacity-70">Courses</p>

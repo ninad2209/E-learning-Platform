@@ -8,7 +8,7 @@ const About = () => {
       {/* Define Grid*/}
       <div className="w-4/5 mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-16">
       {/* 1st Part */}
-      <div>
+      <div data-aos="fade-right" data-aos-anchor-placement="top-center">
         <div className="flex items-center space-x-4">
             <div className="w-12 h-12 bg-rose-600 rounded-full flex items-center justify-center flex-col">
                 <FaAward className="h-6 w-6 text-white"/>
@@ -25,7 +25,7 @@ const About = () => {
         </button>
       </div>
       {/* 2nd Part */}
-      <div>
+      <div data-aos="fade-left" data-aos-delay="150" data-aos-anchor-placement="top-center">
         <div>
             <h1 className="text-7xl lg:text-8xl font-bold text-black text-opacity-5">01</h1>
             <div className="-mt-10">
