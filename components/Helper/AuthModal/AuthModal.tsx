@@ -63,8 +63,8 @@ const AuthModal = ({ show, onClose }: Props) => {
   };
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-[10000]">
-      <div className="bg-white rounded-lg w-[90%] max-w-md p-6 relative">
+    <div className="fixed inset-0 flex justify-center items-center z-[10000] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 animate-gradient">
+      <div className="relative w-[90%] max-w-md p-8 rounded-2xlvbackdrop-blur-lg bg-white/20 shadow-2xl animate-float">
         <button
           onClick={onClose}
           className="absolute top-2 right-2 text-xl font-bold"
@@ -81,7 +81,7 @@ const AuthModal = ({ show, onClose }: Props) => {
           placeholder="Username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
-          className="w-full mb-3 p-2 border border-gray-300 rounded"
+          className="w-full mb-3 px-4 py-3 rounded-lg bg-white/80 focus:bg-white outline-none transition-all duration-300"
         />
 
         <input
@@ -89,14 +89,14 @@ const AuthModal = ({ show, onClose }: Props) => {
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="w-full mb-3 p-2 border border-gray-300 rounded"
+          className="w-full mb-3 px-4 py-3 rounded-lg bg-white/80 focus:bg-white outline-none transition-all duration-300"
         />
 
         {message && <p className="text-red-500 mb-2">{message}</p>}
 
         <button
           onClick={isLogin ? handleLogin : handleSignup}
-          className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition mb-2"
+          className="w-full bg-indigo-600 text-white py-3 rounded-lg hover:scale-105 transition-transform duration-300 mb-2"
         >
           {isLogin ? "Login" : "Sign Up"}
         </button>
