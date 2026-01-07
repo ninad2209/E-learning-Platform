@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📚 E-Learning Platform
 
-## Getting Started
+A modern and responsive **E-Learning Platform** built using **Next.js**,**TypeScript**,and **Tailwind CSS**.This project provides a clean UI for showcasing courses,learning content,and educational resources.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Features
+
+* Built with **Next.js (App Router)**
+* Styled using **Tailwind CSS**
+* Fully responsive design
+* Reusable and clean component structure
+* Organized project architecture
+
+---
+
+## Tech Stack
+
+* **Framework:** Next.js
+* **Language:** TypeScript
+* **Styling:** Tailwind CSS
+* **Package Manager:** npm
+
+---
+
+## 📸 Screenshots
+
+
+### Home Page
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/7aa373eb-6512-4a02-a1c4-581425b25c32" />
+
+### Login Page 
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/b083072a-69de-4c68-a868-e89beccbb57e" />
+
+### Courses Page
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/e8effeb0-58cf-4b63-a2d3-bb5777c8dd0f" />
+
+### About Page 
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/8dd1015d-ce06-477e-a249-05fd911ec6d4" />
+
+### Testimonials Page 
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/87c0d012-ba8a-4f2f-a980-880d7555e2b2" />
+
+### Blog Page 
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/a12eaa69-fa65-47e3-a21f-837784940f64" />
+
+### Footer 
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/8afce99e-cc1c-4a6a-922f-0037a80db91a" />
+
+
+---
+
+## 📂 Project Structure
+
+```
+elearning_yt_starter-main
+├── app
+├── public
+├── data
+├── constant
+├── package.json
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ▶️ Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Follow these steps to run the project locally:
 
-## Learn More
+```bash
+npm install
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Then open:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+http://localhost:3000
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 📄 License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is for learning and educational purposes.
